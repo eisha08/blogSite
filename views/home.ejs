@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/ejs-challenge/public/css/new.css">
+    <%- include("partials/header") -%>
+    <h1>AgonyMother</h1>
+   
+<p><%=  homeStartingContent %></p>
+<h2>Your Shares:</h2>
+<% arraylist.forEach(list => { %>
+  <h1><%= list.head%></h1>
+  <p><%= list.para %></p>
+  
+<% }); %>
+
+  <%- include("partials/footer") %>
+

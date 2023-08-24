@@ -1,0 +1,7 @@
+<%- include("partials/header") -%>
+<% arraylist.forEach(list => { %>
+    <h1><%= list.head%></h1>
+    <p><%= list.para %></p>
+    
+  <% }); %>
+<%- include("partials/footer") %>
