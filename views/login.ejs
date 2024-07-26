@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+<form class="login" action="/login" method="POST">
+    <h2>Welcome, User!</h2>
+    <p>Please log in</p>
+    <input type="text" placeholder="User Name"  name="email" />
+    <input type="password" placeholder="Password" name="password" />
+    <input type="submit" value="Log In" />
+    <div class="links">
+      <!-- <a href="#">Forgot password</a> -->
+      <a href="/register">Not Registered?</a>
+    </div>
+  </form>

@@ -1,0 +1,57 @@
+<%- include("partials/header") -%>
+
+<div class="container">
+    <div class="title">Registration</div>
+    <form action="/register" method="POST">
+      <div class="user__details">
+        <div class="input__box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="E.g: John Smith" name="fullname" >
+        </div>
+        <div class="input__box">
+          <span class="details">UserName</span>
+          <input type="text" placeholder="Username" name="username" >
+        </div>
+        <div class="input__box">
+          <span class="details">Email</span>
+          <input type="email" placeholder="johnsmith@hotmail.com" name="email" >
+        </div>
+        <div class="input__box">
+          <span class="details">Age</span>
+          <input type="number"  placeholder="Write your age" name="age">
+        </div>
+        <div class="input__box">
+          <span class="details">Password</span>
+          <input type="password" placeholder="********" name="password" >
+        </div>
+        <div class="input__box">
+          <span class="details">Confirm Password</span>
+          <input type="password" placeholder="********" name="confirmpassword">
+        </div>
+  
+      </div>
+      <!-- <div class="gender__details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="gender__title">Gender</span>
+        <div class="category">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span>Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span>Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span>Prefer not to say</span>
+          </label>
+        </div>
+      </div> -->
+      <div class="button">
+        <input type="submit" value="register">
+      </div>
+    </form>
+  </div>

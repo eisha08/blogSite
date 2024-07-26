@@ -1,14 +1,17 @@
-<link rel="stylesheet" href="/ejs-challenge/public/css/new.css">
-    <%- include("partials/header") -%>
-    <h1>AgonyMother</h1>
-   
-<p><%=  homeStartingContent %></p>
-<h2>Your Shares:</h2>
-<% arraylist.forEach(list => { %>
-  <h1><%= list.head%></h1>
-  <p><%= list.para %></p>
-  
-<% }); %>
+<%- include("partials/header") -%>
 
-  <%- include("partials/footer") %>
+<div class="container">
+  <p><%= homeStartingContent %></p>
 
+  <h2>Your Shares:</h2>
+  <% if (posts && posts.length > 0) { %>
+    <% posts.forEach(post => { %>
+      <h1><a href="/post/<%= post._id %>"><%= post.title %></a></h1>
+      <p><%= post.content.substring(0, 100) %>...</p> <!-- Showing a preview of the post content -->
+    <% }) %>
+  <% } else { %>
+    <p>No posts to display.</p>
+  <% } %>
+</div>
+
+<%- include("partials/footer") -%>
