@@ -14,7 +14,8 @@ const blogSchema=new mongoose.Schema({
        user:
        {
            type:mongoose.Types.ObjectId,
-           ref:"Register"
+           ref:"Register",
+           default:null,
        },
 })
 const blogDB=new mongoose.model("blogDB",blogSchema);

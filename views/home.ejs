@@ -7,7 +7,9 @@
   <% if (posts && posts.length > 0) { %>
     <% posts.forEach(post => { %>
       <h1><a href="/post/<%= post._id %>"><%= post.title %></a></h1>
-      <p><%= post.content.substring(0, 100) %>...</p> <!-- Showing a preview of the post content -->
+      <p><%= post.content.substring(0, 100) %>...</p>
+      
+       <!-- Showing a preview of the post content -->
     <% }) %>
   <% } else { %>
     <p>No posts to display.</p>
