@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
+
   <nav class="navbar navbar-default">
     <div class="navcontainer">
       <div class="navbar-header">
@@ -27,8 +28,8 @@
       <li id="contact"><a href="/contact">CONTACT US</a></li>
       <!-- <li id="contact"><a href="/compose">COMPOSE</a></li> -->
       <% if (session.userId) { %>
-        <li><a href="/compose">Compose</a></li>
-        <li><a href="/logout">Logout</a></li>
+        <li><a href="/compose">COMPOSE</a></li>
+        <li><a href="/logout">LOGOUT</a></li>
         <% } else { %>
           <li><a href="/login">LOGIN</a></li>
           <% } %>

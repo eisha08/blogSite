@@ -1,18 +1,38 @@
 <%- include("partials/header") -%>
-
-<div class="container">
-  <h1>Compose</h1>
-  <form action="/submit" method="POST">
-    <div class="form-group">
-      <label for="title">Post Title</label>
-      <input type="text" class="form-control" id="title" name="title">
+<div class="compose">
+  <div class="com">
+    Vent out your Feelings!!
+  </div>
+  
+  <div class="container2">
+   
+    <div class="lll">
+    <img src="/images/wr.png" alt="">
     </div>
-    <div class="form-group">
-      <label for="thoughts">Post Content</label>
-      <textarea class="form-control" id="thoughts" name="thoughts"></textarea>
+    <div class="rrr">
+      
+      <div class="boxx">
+        <form action="/submit" method="POST">
+          <div class="cc">
+            Compose your blogs
+          </div>
+          <div class="form-group">
+            <label class="compose-title" for="title">Post Title</label>
+            <input type="text" class="form-control" id="title" name="title">
+          </div>
+          <div class="form-group">
+            <label class="compose-title" for="thoughts">Post Content</label>
+            <textarea class="form-control" id="thoughts" name="thoughts"></textarea>
+          </div>
+          <button type="submit" class="btn1">Publish</button>
+        </form>
+      </div>
+     
+     
     </div>
-    <button type="submit" class="btn btn-primary">Publish</button>
-  </form>
+      </div>
+     
 </div>
 
-<%- include("partials/footer") -%>
+
+<!-- <%- include("partials/footer") -%> -->

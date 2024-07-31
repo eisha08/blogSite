@@ -215,7 +215,7 @@ body{
 .login {
   margin: 20px auto;
   padding: 40px 50px;
-  max-width: 300px;
+  width: 500px;
   border-radius: 5px;
   background: #fff;
   box-shadow: 1px 1px 1px #666;
@@ -310,12 +310,12 @@ body{
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-/* * {
+.container1{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-} */
+}
 
 :root {
   --main-blue: #71b7e6;
@@ -324,20 +324,20 @@ body{
   --sub-grey: #d9d9d9;
 }
 
-/* .container {
+.container1 {
   max-width: 700px;
   width: 100%;
   background: #fff;
   padding: 25px 30px;
   border-radius: 5px;
-} */
-.container .title {
+}
+.container1 .title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
 
-.container .title::before {
+.container1 .title::before {
   content: "";
   position: absolute;
   height: 3.5px;
@@ -347,7 +347,7 @@ body{
   bottom: 0;
 }
 
-.container form .user__details {
+.container1 form .user__details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -357,7 +357,7 @@ form .button {
   height: 45px;
   margin: 45px 0;
 }
-orm .user__details .input__box {
+form .user__details .input__box {
   width: calc(100% / 2 - 20px);
   margin-bottom: 15px;
 }
@@ -383,7 +383,17 @@ orm .user__details .input__box {
 .user__details .input__box input:valid {
   border-color: var(--main-purple);
 }
-
+.divv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headd{
+  font-family:Raleway, sans-serif;
+  font-size: xx-large;
+  padding: 30px;
+}
 /* inside the form gender details */
 
 form .gender__details .gender__title {
@@ -445,4 +455,102 @@ form .button input {
 
 form .button input:hover {
   background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+}
+
+/* compose */
+.container2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.lll{
+  width: 45%;
+}
+.rrr{
+  width: 55%;
+}
+.cc{
+  font-family:Raleway, sans-serif ;
+  font-size: x-large;
+  padding-bottom: 20px;
+}
+.compose{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+.com{
+  text-align: center;
+  font-family:Raleway, sans-serif ;
+  font-size: xx-large;
+  padding: 15px;
+}
+.compose-title{
+  font-family:Raleway, sans-serif ;
+  font-size: larger;
+}
+.boxx{
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 1px #666;
+  height: 400px;
+}
+.form-control{
+  padding: 35px;
+}
+.btn1{
+  background-color: #71b7e6;
+  padding: 5px;
+  width: 100px;
+  border-radius: 10px;
+  font-family:Raleway, sans-serif ;
+  font-size: medium;
+  border: 2px #71b7e6 solid;
+  
+  
+}
+
+/* contact */
+
+.formss{
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  
+}
+
+.formm{
+padding: 20px;
+border: 2px solid rgb(166, 163, 163) ;
+width: 400px;
+height: 300px;
+
+  box-shadow: 1px 1px 1px #666;
+}
+.form1{
+  padding: 10px;
+}
+.form5{
+  padding: 25px;
+}
+.btn2{
+  margin-top: 20px;
+  background-color: #71b7e6;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 0;
+  font-size: 17px;
+}
+.xxx{
+  padding: 25px;
+}
+.compose1{
+  padding: 2px;
+}
+.compose2{
+  padding: 2px;
 }
