@@ -1,20 +1,35 @@
 <%- include("partials/header") -%>
 
 <div class="container">
-  <p><%= homeStartingContent %></p>
-
-  <h2>Your Shares:</h2>
-  <% if (posts && posts.length > 0) { %>
-    <% posts.forEach(post => { %>
-      <h1><a href="/post/<%= post._id %>"><%= post.title %></a></h1>
-      <p><%= post.content.substring(0, 200) %>...</p>
-      
+  <div class="maindiv">
+    <div class="img">
+      <img class="notebook" src="/images/zz.png" alt="Notebook Image">
+    </div>
+    <div class="head">
+      <p><%= homeStartingContent %></p>
+    </div>
+    <div class="shares">
+      <div class="kk">
        
-    <% }) %>
-  <% } else { %>
-    <p>No posts to display.</p>
-  <% } %>
+        <div class="your">
+          <h2>Your Shares</h2>
+        </div>
+        <div class="icon">
+          <img class="icon1" src="/images/pen.png" alt="">
+        </div>
+       
+      </div>
+     
+      <% if (posts && posts.length > 0) { %>
+        <% posts.forEach(post => { %>
+          <h1 class="blogHead"><a class="a" href="/post/<%= post._id %>"><%= post.title %></a></h1>
+          <p class="blogContent"><%= post.content.substring(0, 200) %>...</p>
+        <% }) %>
+      <% } else { %>
+        <p>No posts to display.</p>
+      <% } %>
+    </div>
+  </div>
 </div>
 
-<%- include("partials/footer") -%>
- 
+<!-- <%- include("partials/footer") -%> -->

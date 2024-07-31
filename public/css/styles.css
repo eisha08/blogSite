@@ -54,9 +54,80 @@
 	font-size: 12px;
   color: #fff;
 }
-/* body{
-    background-image: url("/blog/public/images");
-} */
+body{
+    background-color: #a9cedb;
+}
+ /* home */
+ .container{
+  
+  height: fit-content;
+  /* //padding-top: 15px; */
+  margin: 0;
+  padding-left: 0;
+ }
+ .maindiv{
+  position: absolute;
+ }
+ .notebook{
+  height: 90vh;
+  width: 100vw;
+  
+  position: absolute;
+ }
+.head{
+  width: 25%;
+  position: relative;
+  margin-top: 15%;
+ margin-left: 55%;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-size: x-large;
+}
+.shares{
+  
+  position: relative;
+  margin-top: 20%;
+  padding-left: 20px;
+}
+.kk{
+  display: flex;
+  flex-direction: row;
+  gap:8px;
+}
+.your{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.icon1{
+  height: 60px;
+  width: 50px;
+
+}
+.blogHead{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  
+}
+.a{
+  text-decoration: none;
+  color: inherit;
+}
+.a:hover {
+  text-decoration: none; /* Underline on hover */
+  color:inherit;
+  
+}
+.blogContent{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+
+/* responsive home */
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  
+  
+}
+
+
 /* //login css */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
