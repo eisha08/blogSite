@@ -7,6 +7,7 @@ const bcrypt = require("bcrypt");
 require("./src/database");
 const Register = require('./src/register');
 const blogDB = require('./src/model');
+const path = require('path');
 
 const homeStartingContent = "AgonyMother is your go-to destination for sharing your daily life updates. Our mission is to be a listener for all those as well as reader for all those who dont have people with whom they can share whats going in their life.Just like a agonymother we will give you a warn space to vent out.";
 const aboutContent = "Our mission is simple: to provide valuable, insightful, and engaging content that informs, educates, and entertains our readers. We're dedicated to delivering high-quality articles, guides, and resources that cater to the interests and needs of our audience.We are a team of 3 enthusiasts who share a deep passion for comapnionship. Our diverse backgrounds and experiences allow us to approach topics from various angles, ensuring that we provide well-rounded and comprehensive content. From beginners looking for tips and guidance to seasoned professionals seeking the latest trends and innovations, our content is designed to cater to a wide range of readers.";
@@ -15,8 +16,9 @@ const contactContent = "Thank you for visiting AgonyMother! We value your feedba
 const app = express();
 const arraylist = [];
 
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
