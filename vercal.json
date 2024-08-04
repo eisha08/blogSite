@@ -1,0 +1,14 @@
+{
+    "version":2,
+    "builds":[
+        {
+        "src":"./appp.js",
+        "use": "@nvercel/node"
+        }
+    ],
+    "routes":[{
+        "src":"/(.*)",
+        "dest":"/"
+    }
+]
+}
